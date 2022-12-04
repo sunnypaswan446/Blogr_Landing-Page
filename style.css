@@ -1,0 +1,361 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    padding: 5px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    background: transparent;
+    border: 1px solid white;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+}
+
+
+button:hover {
+    color: hsl(13, 100%, 72%);
+    background-color: rgba(255, 255, 255, 0.527);   
+}
+
+.active{
+    display: block;
+}
+/* -----------------Header------------------------ */
+
+header {
+    min-height: 743px;
+    background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: white;
+    border-radius: 0px 0px 0px 100px;
+}
+
+header h1 {
+    margin-right: 10px;
+}
+
+.navbar {
+    width: 100%;
+    justify-content: space-between;
+}
+.logo img{display: none;}
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.menu_list ul li {
+    padding: 10px 15px;
+}
+
+.nav_list .btn {
+    padding: 10px;
+}
+
+
+.container .herosection {
+    max-width: 100%;
+    height: 700px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+
+.container .herosection h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.container .herosection .sign_button {
+    margin: 25px 0;
+}
+
+
+/* ----------------------Design---------------------------------- */
+.design_section h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.inner_design {
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.inner_design .text_area {
+    max-width: 50%;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
+.text_body{
+    margin: 0 25px;
+}
+
+.text_body h1 {
+    margin: 15px 0;
+}
+
+.text_body p {
+    line-height: 2;
+    letter-spacing: 2px;
+    margin: 50px 0;
+}
+
+.inner_design .image_area {
+    max-width: 50%;
+    /* background: url("./images/illustration-editor-desktop.svg"); */
+}
+
+/* ------------------------State of Art Infrastructure -------------------*/
+.State_section {
+    background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    color: white;
+    border-radius: 0px 100px 0px 100px;
+    ;
+}
+
+.State_section_image {
+    min-width: 50%;
+}
+
+.State_section_image img{
+    max-width: 100%;
+    padding: 60px;
+    object-position: 15px;
+}
+
+.State_section_text {
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.State_section_text_ h1 {
+    margin: 15px 0;
+}
+
+.State_section_text_ p {
+    line-height: 2;
+    letter-spacing: 2px;
+    margin: 50px 0;
+
+}
+
+/* -------------------------Chacarterstics--------------------- */
+.characterstics .inner_design {
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.charactersticsimage_area {
+    max-width: 50%;
+}
+
+.charactersticsimage_area img {
+    max-width: 100%;
+}
+
+.design_section h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.inner_design {
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.characterstics_text_area {
+    max-width: 50%;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.characterstics_text_body{
+    margin: 0 15px;
+}
+.characterstics_text_body h1 {
+    margin: 15px 0;
+}
+
+.characterstics_text_body p {
+    line-height: 2;
+    letter-spacing: 2px;    
+    margin: 50px 0;
+}
+
+/* ---------------------------------Footer---------------------- */
+footer{
+    min-height: 250px;
+    background-color: hsl(240, 10%, 16%);
+    border-radius: 0px 100px 0px 0px;
+}
+.Footer_Element{   
+    min-width: 100%; 
+    justify-content: space-evenly;    
+   
+    color: hsl(240, 2%, 79%);
+    padding: 50px 0;
+}
+
+.Footer_Element h1 {
+    color: white;
+}
+.footer_column li{
+    margin: 10px 0px;
+}
+.column_heading {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.Footer_Element li:hover {
+    text-decoration: underline;
+}
+
+
+/* -----------------Small devices----------------- */
+@media(max-width:700px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .nav_list {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: ease 3s ;
+    }
+    .nav_list ul li{
+        font-size: 20px;
+    }
+    .logo{
+        justify-content: space-between;
+    }
+    .logo img{
+        display: block;
+        width: 10%;
+        cursor: pointer;    
+    }
+    .herosection{
+        min-height: 93vh;
+    }
+
+    .menu_list ul {
+        flex-direction: column;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .btn{
+        border-top: 1px solid white;
+        padding: px;
+        text-align: center;
+    }
+    .btn button{
+        margin: 15px;
+        width: 100px;
+    }
+    /* ---------------------Designed Section-------------------- */
+    .inner_design {
+        flex-direction: column-reverse;
+    }
+
+    .inner_design .image_area {
+        max-width: 100%;
+    }
+
+    .image_area img {
+        max-width: 100%;
+    }
+
+    .inner_design .text_area {
+        max-width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .text_body h2 {
+        margin: 25px 0;
+    }
+
+    /*--------------------State of the Art Structure------------*/
+    .State_section_card {
+        flex-direction: column;
+    }
+
+    .State_section_image,
+    .State_section_image img,
+    .State_section_text {
+        max-width: 100%;
+    }
+
+    .State_section_text {
+        padding: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    /* --------------------Characterstics--------------------- */
+    .characterstics .inner_design {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .charactersticsimage_area {
+        max-width: 100%;
+    }
+
+    .charactersticsimage_area img {
+        max-width: 100%;
+    }
+
+    .characterstics_text_area {
+        max-width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+/*-------------------------Footer---------------------------*/
+     .Footer_Element{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 70px 0;
+    }
+   
+    .footer_column li{
+        padding: 5px 0;
+    }
+
+}
